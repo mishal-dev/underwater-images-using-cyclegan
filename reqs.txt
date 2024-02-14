@@ -28,7 +28,6 @@ streamlit_folium
 shapely
 transformers
 pydeck
-cmake wheel
 dlib
 beepy
 face-recognition
