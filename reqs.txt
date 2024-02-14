@@ -7,7 +7,6 @@ matplotlib
 requests
 keras
 pillow
-dlib
 flask
 streamlit
 scikit-learn
@@ -29,3 +28,7 @@ streamlit_folium
 shapely
 transformers
 pydeck
+cmake wheel
+dlib
+beepy
+face-recognition
