@@ -27,7 +27,6 @@ geopy
 streamlit_folium
 shapely
 transformers
-pydeck
-dlib
+pydeck
 beepy
 face-recognition
