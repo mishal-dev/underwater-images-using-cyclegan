@@ -35,7 +35,16 @@ model_v = 'RAUNENet'
 # Check the path of trained model
 model_path = os.path.join(opt.checkpoint_dir, model_v, opt.name, f'weights_{opt.epoch}.pth')
 assert exists(model_path), "model weights not found"
+def create_folder(folder_path):
+    try:
+        # Create a directory at the specified path
+        os.makedirs(folder_path)
+        print(f"Folder '{folder_path}' created successfully.")
+    except FileExistsError:
+        print(f"Folder '{folder_path}' already exists.")
 
+# Example usage:
+folder_path = "results"
 # Make useful directories for saving results
 os.makedirs(os.path.join(opt.result_dir, opt.test_name, 'paired'), exist_ok=True)
 os.makedirs(os.path.join(opt.result_dir, opt.test_name, 'single/input'), exist_ok=True)
@@ -99,3 +108,17 @@ if (len(times) > 1):
     total_time, mean_time = np.sum(times), np.mean(times)
     logger.info("Time taken: {:.3f} sec at {:.3f} fps".format(total_time, 1./mean_time))
     logger.info("Saved enhanced images in {}\n".format(opt.result_dir))
+
+
+folder_path="results"
+if os.path.exists(folder_path):
+    # List all files in the folder
+    files = os.listdir(folder_path)
+    
+    # Check if there are any files in the folder
+    if files:
+        print("Hello")
+    else:
+        print("No files found in the folder")
+else:
+    print("Folder not found")
