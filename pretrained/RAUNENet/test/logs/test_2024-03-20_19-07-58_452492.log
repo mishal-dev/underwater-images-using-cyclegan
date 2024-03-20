@@ -1,0 +1,13 @@
+2024-03-20 19:07:58 | INFO - Starting Test Process...
+2024-03-20 19:07:58 | INFO - name: test
+2024-03-20 19:07:58 | INFO - test_name: test1
+2024-03-20 19:07:58 | INFO - checkpoint_dir: pretrained
+2024-03-20 19:07:58 | INFO - data_dir: /Users/mishalahammed/Downloads/USI/RAUNE-Net/inputimages
+2024-03-20 19:07:58 | INFO - result_dir: results/raunet_test01
+2024-03-20 19:07:58 | INFO - epoch: 95
+2024-03-20 19:07:58 | INFO - input_width: 256
+2024-03-20 19:07:58 | INFO - input_height: 256
+2024-03-20 19:07:58 | INFO - num_down: 2
+2024-03-20 19:07:58 | INFO - num_blocks: 30
+2024-03-20 19:07:58 | INFO - use_att_up: False
+2024-03-20 19:07:58 | INFO - model_path: pretrained/RAUNENet/test/weights_95.pth
